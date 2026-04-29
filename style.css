@@ -1,6 +1,10 @@
 .body { 
     background-color: #1a1a1a; color: #f8f9fa; 
-    font-family: 'Arial', sans-serif;}
+    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    adding: 0;
+}
 
 .navbar { 
     background-color: #ffd700 !important;
@@ -17,4 +21,31 @@
 
 h1, h2 { 
     color: #ffd700; text-shadow: 2px 2px #000; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+}
+
+.p {
+line-height: 1.6;
+color: #666;
 }
