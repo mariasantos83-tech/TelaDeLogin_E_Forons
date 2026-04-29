@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2>Fórum da Realeza</h2>
+    <div class="list-group">
+        <div class="list-group-item bg-dark text-white border-warning">
+            <h5><strong>@Frankie_Volt</strong> - "Qual o melhor look da Cleo?"</h5>
+            <p>Eu amo o visual dela no filme 'Ghouls Rule', o dourado brilha muito!</p>
+        </div>
+        <div class="list-group-item bg-dark text-white border-warning mt-2">
+            <h5><strong>@Deuce_Snakes</strong> - "Dúvida cruel"</h5>
+            <p>Alguém sabe onde ela comprou aquele novo iCaixão de ouro?</p>
+        </div>
+    </div>
+
+    <div class="mt-5 border p-4 rounded bg-dark">
+        <h4>Deixe seu comentário:</h4>
+        <textarea id="comentario" class="form-control mb-2" placeholder="Escreva como um monstro..."></textarea>
+        <button onclick="postar()" class="btn btn-warning">Enviar para a Rainha</button>
+    </div>
+</div>
+
+<script>
+    function postar() {
+        const txt = document.getElementById('comentario').value;
+        if(txt) {
+            alert("Comentário enviado! Cleo de Nile analisará seu súplica.");
+            document.getElementById('comentario').value = "";
+        } else {
+            alert("Escreva algo antes de enviar!");
+        }
+    }
+</script>
