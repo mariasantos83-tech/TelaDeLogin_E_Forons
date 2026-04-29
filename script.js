@@ -33,9 +33,9 @@ function postarComentario() {
     const texto = input.value.trim();
 
     if (texto === "") {
-        alert("Sua Majestade Cleo não aceita mensagens vazias! Escreva algo.");
+        alert("Não aceiteitamos mensagens vazias! Escreva algo.");
     } else {
-        alert("💎 Comentário enviado com sucesso para o império de Nile!");
+        alert(" Comentário enviado com sucesso para o império de Nile!");
         input.value = "";
     }
 }
