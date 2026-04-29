@@ -59,12 +59,27 @@
             </form>
         </div>
     </div>
-</div>
-    <div class="container">
-        <h1>Cleo de Nile</h1>
-        <img src="cleo.jpg" alt="Cleo de Nile" class="character-image">
-        <p>Cleo de Nile é uma personagem da franquia Monster High. Filha da Múmia, ela é conhecida por seu estilo glamoroso e elegante. Cleo é confiante, estilosa e tem uma personalidade forte. Ela costuma usar roupas e acessórios de inspiração egípcia, refletindo sua herança cultural.</p>
-    </div>
+</div> 
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const user = document.getElementById('usuario').value;
+        const pass = document.getElementById('senha').value;
+        const msg = document.getElementById('msgErro');
+
+        msg.classList.add('d-none');
+
+        if(user === "" || pass === "") {
+            msg.textContent = "Os campos não podem estar vazios!";
+            msg.classList.remove('d-none');
+        } else if(user === "admin" && pass === "1234") {
+            window.location.href = "home.html";
+        } else {
+            msg.textContent = "Dados incorretos, reles mortal!";
+            msg.classList.remove('d-none');
+        }
+    });
+</script>
 </body>
 
 </html>
